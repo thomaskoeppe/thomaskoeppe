@@ -4,10 +4,10 @@
 
 ##### NOW
 
-- 👩‍💻 Work as a Developer at [PvPDojo](https://pvpdojo.com) and [DieInsel](https://insel.gg);
+- 👩‍💻 Work as a Developer at [DieInsel](https://insel.gg);
 - Various projects on the side
 
 ##### BIO
 
-- ⚙️ I use daily: `.php`, `.jar`, `.cs`, `.lua`, `.sh`, `.ps1`
+- ⚙️ I use daily: `.php`, `.cs`, `.lua`, `.sh`, `.ps1`
 - 🌱 Learn new things **everyday**
