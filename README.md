@@ -3,8 +3,7 @@
 
 namespace Thomas;
 
-use App\Helper\Person;
-use App\Models\UserMood;
+use Person;
 
 class About extends Person
 {
