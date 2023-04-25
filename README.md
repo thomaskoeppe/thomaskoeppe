@@ -45,21 +45,4 @@ class About extends Person
             "DieInsel" => "https://www.insel.gg"
         ];
     }
-    
-    /**
-     * Get the current mood of the person.
-     *
-     * @return int An int with the mood type.
-     */
-    public function getMood(): int
-    {
-      $mood = UserMood::where("id", $this->getId())->first();
-      
-      if (!$mood)
-      {
-        throw new Exception("Can not find mood!");
-      }
-      
-      return $mood->type;
-    }
 }
