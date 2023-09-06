@@ -1,47 +1,66 @@
-```php
-<?php
+```ts
+import { Person } from '@person';
+import { Languages, Frameworks } from '@technologies';
 
-namespace Thomas;
-
-use Person;
-
-class About extends Person
-{
+export default class About extends Person {
     /**
-     * Get the current job of the person.
-     *
-     * @return string The current job of the person.
+     * @return {string} Current job
+     * @description My current job
      */
-    public function getCurrentJob(): string
-    {
-        return "IT-Specialist";
+    public getCurrentJob(): string {
+        return 'IT-Specialist';
     }
-    
+
     /**
-     * Get the daily knowledge of the person.
-     *
-     * @return array An array of classes representing the daily knowledge of the person.
+     * @return {Languages[]} Known languages
+     * @description Languages I know
      */
-    public function getDailyKnowledge(): array
-    {
+    public getKnownLanguages(): Languages[] {
         return [
-            Php::class,
-            Javascript::class,
-            Laravel::class,
-            CSharp::class,
-            Powershell::class
-        ];
+            Languages.PHP,
+            Languages.JavaScript,
+            Languages.TypeScript,
+            Languages.CSharp,
+            Languages.Powershell
+        ]
     }
-    
+
     /**
-     * Get the projects of the person.
-     *
-     * @return object An object with project names as keys and project URLs as values.
+     * @return {Frameworks[]} Used frameworks
+     * @description Frameworks I use
      */
-    public function getProjects(): object
-    {
-        return (object) [
-            "DieInsel" => "https://www.insel.gg"
-        ];
+    public getUsedFrameworks(): Frameworks[] {
+        return [
+            Frameworks.React,
+            Frameworks.NextJS,
+            Frameworks.Laravel,
+            Frameworks.DiscordJS,
+            Frameworks.ExpressJS,
+            Frameworks.Bootstrap,
+            Frameworks.TailwindCSS
+        ]
+    }
+
+    /**
+     * @return {string} Future goal
+     * @description My future goal
+     */
+    public getFutureGoal(): string {
+        return 'Become a Fullstack-Developer';
+    }
+
+    /**
+     * @return {string[]} Hobbies
+     * @description My hobbies
+     */
+    public getHobbies(): string[] {
+        return [
+            'Learning new things',
+            'Playing video games',
+            'Coding',
+            'Watching movies',
+            'Listening to music'
+        ]
     }
 }
+```
